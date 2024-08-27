@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "baseUrl": "src",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["@types/node"],
+    "moduleResolution": "Node",
+    "jsx": "react",
+    "sourceMap": false,
+    "outDir": "../dist",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": false,
+    "removeComments": true,
+    "declaration": true,
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.d.ts", "ecosystem.config.cjs"]
+}
