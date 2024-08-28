@@ -1,7 +1,7 @@
 /* =================== USAGE ===================
 
     import express from "express"; ---> express.js
-    import router from "express-file-router"
+    import router from "express-advanced-router"
     var app = express();
     router(app)
 
