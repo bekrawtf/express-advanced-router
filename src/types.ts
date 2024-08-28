@@ -32,7 +32,7 @@ export interface GetRouteContent {
   (__routePath: string, isChildren: false): Promise<RouteContent>;
 }
 
-export type UrlOptions = {
+export type RouteOptions = {
   routesPath?: string;
   baseRoute?: string;
   publicRouteName?: string;

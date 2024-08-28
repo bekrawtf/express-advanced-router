@@ -6,7 +6,7 @@ import {
   RoutePath,
   RouteTypes,
   GetRouteContent,
-  UrlOptions,
+  RouteOptions,
 } from "../types";
 import { pathToFileURL } from "url";
 import type { Express } from "express-serve-static-core";
@@ -50,7 +50,7 @@ class RouteSettings {
   private __baseRoute: string | undefined = undefined;
   private __publicRouteName: string | undefined = undefined;
 
-  constructor(urlOptions?: UrlOptions) {
+  constructor(urlOptions?: RouteOptions) {
     if (urlOptions) {
       const { baseRoute, publicRouteName, routesPath } = urlOptions;
 
@@ -246,7 +246,7 @@ class RouteSettings {
 }
 
 export class ExpressAdvancedRouter extends RouteSettings {
-  constructor(private app: Express, urlOptions?: UrlOptions) {
+  constructor(private app: Express, urlOptions?: RouteOptions) {
     super(urlOptions);
     this.__routesPathControl();
   }
