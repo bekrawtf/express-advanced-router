@@ -11,7 +11,6 @@ To use this application, first create an Express application. Pass the applicati
 ```js
 import express from "express";
 import advancedRouter from "./index";
-import path from "path";
 
 const app = express();
 
@@ -61,3 +60,26 @@ Currently supported methods:
 - `HEAD` = HEAD_
 
 ![routes_handler](https://i.imgur.com/tcxO4bN.png)
+
+
+# Handler File Structure
+In the file structure for handlers, there should be a handler function that is exported as the default, along with an array that contains any middleware. Important points to note: The handler must always be exported as the default, while middleware should be exported as a named export within an array named middlewares.
+
+## Middlewares
+Middlewares are similar to handlers in that they also take req, res, and next as parameters. To apply middlewares in a handler, import them into the handler's file. Then, define a middlewares variable as an array of type Handler[]. Place the middlewares you wish to apply in the array in the desired order, and export this array as a named export.
+
+### Example Handler With Middlewares
+The handler must always be exported as the default.
+
+```ts
+import type { Handler } from "express";
+import {mw_1,mw_2} from "../middlewares/index";
+
+export const middlewares: Handler[] = [mw_1, mw_2];
+
+const handler: Handler = async (req, res) => {
+  res.sendStatus(200);
+};
+
+export default handler;
+```
