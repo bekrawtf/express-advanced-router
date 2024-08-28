@@ -59,7 +59,7 @@ Currently supported methods:
 - `OPTIONS` = OPTIONS_
 - `HEAD` = HEAD_
 
-![routes_handler](https://i.imgur.com/tcxO4bN.png)
+![routes_handler](https://i.imgur.com/RVVO8gB.png)
 
 
 # Handler File Structure
