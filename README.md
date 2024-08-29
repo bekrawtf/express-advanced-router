@@ -23,6 +23,14 @@ app.listen(3000);
 
 You can use customizable settings to change the location of the routes folder, the base route (e.g., baseRoute), or the public route name. To do this, create a RouteOptions object and pass it as a parameter after your expressApp.
 
+If these settings are not configured, the following default values will be used:
+
+| Option    |  Default  |
+|---------------|-----------|
+| **`routesPath`**  | "src/routes" |
+| **`publicRouteName`**  | "/public" |
+| **`baseRoute`**  | "/" |
+
 ![routes_options](https://i.imgur.com/fm4PDyJ.png)
 
 # Route Types & Prefixes

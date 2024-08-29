@@ -10,7 +10,7 @@
     ],
     "moduleResolution": "Node",
     "sourceMap": false,
-    "outDir": "dist",
+    "outDir": "dist/esm",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
@@ -24,7 +24,7 @@
     "composite": false,
     "emitDeclarationOnly": false
   },
-  "include": ["src/**/*", "routes"],
+  "include": ["src/**/*"],
   "exclude": [
     "node_modules",
     "**/*.d.ts",
