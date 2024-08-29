@@ -12,7 +12,7 @@ import { ExpressAdvancedRouter } from "./router/index.js";
 import { RouteOptions } from "./types.js";
 export * from "./types.js";
 
-export default async function (expressApp: Express, options?: RouteOptions) {
+const advancedRouter = async (expressApp: Express, options?: RouteOptions) => {
   if (!expressApp) throw new Error("Express App is required!");
 
   const advancedRouter = new ExpressAdvancedRouter(expressApp, options);
@@ -20,4 +20,6 @@ export default async function (expressApp: Express, options?: RouteOptions) {
   advancedRouter
     .getRouteContent(advancedRouter.__routesPath, false)
     .then((routes) => advancedRouter.createRoutes(routes));
-}
+};
+
+export default advancedRouter;

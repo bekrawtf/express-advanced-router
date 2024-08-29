@@ -1,6 +1,6 @@
 {
   "name": "express-advanced-router",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "File-based router for express",
   "author": "Bekra",
   "repository": "bekrawtf/express-advanced-router",
@@ -25,8 +25,11 @@
     "typescript"
   ],
   "exports": {
-    "import": "./dist/esm/index.js",
-    "require": "./dist/cjs/index.js"
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./package.json": "./package.json"
   },
   "license": "MIT",
   "devDependencies": {
