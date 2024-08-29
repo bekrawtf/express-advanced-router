@@ -2,6 +2,8 @@
   "name": "express-advanced-router",
   "version": "1.0.0",
   "description": "File-based router for express",
+  "author": "Bekra",
+  "repository": "bekrawtf/express-advanced-router",
   "type": "module",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -22,7 +24,6 @@
     "advanced",
     "typescript"
   ],
-  "author": "Bekra",
   "exports": {
     "import": "./dist/esm/index.js",
     "require": "./dist/cjs/index.js"
