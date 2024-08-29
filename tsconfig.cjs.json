@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "CommonJS",
     "target": "ESNext",
-    "baseUrl": "src",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["@types/node"],
+    "lib": ["esnext"],
+    "types": [
+      "@types/node",
+      "@types/express",
+      "@types/express-serve-static-core"
+    ],
     "moduleResolution": "Node",
-    "jsx": "react",
     "sourceMap": false,
-    "outDir": "../dist",
+    "outDir": "dist/cjs",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
@@ -19,8 +21,15 @@
     "noEmit": false,
     "removeComments": true,
     "declaration": true,
-    "composite": true
+    "composite": false,
+    "emitDeclarationOnly": false
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.d.ts", "ecosystem.config.cjs"]
+  "exclude": [
+    "node_modules",
+    "**/*.d.ts",
+    "ecosystem.config.cjs",
+    "src/*test*",
+    "routes"
+  ]
 }

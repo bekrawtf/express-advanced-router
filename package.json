@@ -9,8 +9,9 @@
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "scripts": {
-    "build": "tsc && npm run build:cjs",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build": "npm run build:mjs && npm run build:cjs",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:mjs": "tsc --project tsconfig.mjs.json",
     "dev": "nodemon --exec tsx src/__test.ts",
     "remove:dist": "node scripts/index.js",
     "start": "node dist/index.js"
