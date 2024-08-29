@@ -1,4 +1,4 @@
-import { RouteContent } from "./router";
+import { RouteContent } from "./router/index.js";
 
 export enum HttpMethods {
   GET = "GET",

@@ -7,7 +7,7 @@ import {
   RouteTypes,
   GetRouteContent,
   RouteOptions,
-} from "../types";
+} from "../types.js";
 import { pathToFileURL } from "url";
 import type { Express } from "express-serve-static-core";
 

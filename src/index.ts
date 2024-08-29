@@ -8,9 +8,9 @@
  =============================================== */
 
 import type { Express } from "express-serve-static-core";
-import { ExpressAdvancedRouter } from "./router/index";
-import { RouteOptions } from "./types";
-export * from "./types";
+import { ExpressAdvancedRouter } from "./router/index.js";
+import { RouteOptions } from "./types.js";
+export * from "./types.js";
 
 export default async function (expressApp: Express, options?: RouteOptions) {
   if (!expressApp) throw new Error("Express App is required!");

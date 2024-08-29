@@ -8,9 +8,13 @@ You can define route types (Dynamic, Static, Catch-All, Public) by using specifi
 
 To use this application, first create an Express application. Pass the application as a parameter to the module exported as the default from "express-advanced-router". If a RouteOptions object is not provided, it will search for the routes folder in "src/routes". If the folder is not found, an error will be thrown.
 
+```
+npm i express-advanced-router
+```
+
 ```js
 import express from "express";
-import advancedRouter from "./index";
+import advancedRouter from "express-advanced-router";
 
 const app = express();
 
