@@ -202,9 +202,7 @@ class RouteSettings {
 
   getRoutePath = (filePath: string, __parentPath?: string) => {
     const { route, type } = this.pathContent(filePath, __parentPath);
-
-    console.log(route);
-
+    
     const routePath = {
       filePath,
       route: route,
