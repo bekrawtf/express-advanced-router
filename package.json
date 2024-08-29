@@ -1,6 +1,6 @@
 {
   "name": "express-advanced-router",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "File-based router for express",
   "author": "Bekra",
   "repository": "bekrawtf/express-advanced-router",
